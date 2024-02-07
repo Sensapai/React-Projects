@@ -1,0 +1,21 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer components {
+    .body {
+        background: rgb(2, 0, 36);
+        background: -moz-linear-gradient(300deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 50%, rgba(0, 212, 255, 1) 100%);
+        background: -webkit-linear-gradient(300deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 50%, rgba(0, 212, 255, 1) 100%);
+        background: linear-gradient(300deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 50%, rgba(0, 212, 255, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024", endColorstr="#00d4ff", GradientType=1);
+    }
+}
+
+.otp-container {
+    @apply gap-5
+}
+
+.otp-input {
+    @apply rounded-sm !w-10 h-10 font-semibold text-lg
+}
