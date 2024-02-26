@@ -4,9 +4,9 @@ import SidebarRow from "./SidebarRow"
 
 function Sidebar() {
     return (
-        <div className="w-[164px] pt-4">
+        <div className="w-[164px] pt-3.5">
             <nav>
-                <ol className="*:hover:rounded *:cursor-pointer hover:*:bg-gray-200">
+                <ol className="">
                     <li><SidebarRow Icon={UserCircleIcon} title="My profile" /></li>
                     <li><SidebarRow Icon={NewspaperIcon} title="News" /></li>
                     <li><SidebarRow Icon={ChatBubbleOvalLeftIcon} title="Messenger" /></li>
@@ -19,10 +19,10 @@ function Sidebar() {
                     <li><SidebarRow Icon={ChartBarSquareIcon} title="Clips" /></li>
                     <li><SidebarRow Icon={PuzzlePieceIcon} title="Games" /></li>
                     <li><SidebarRow Icon={FaceSmileIcon} title="Stickers" /></li>
+                    <li><SidebarRow Icon={ShoppingBagIcon} title="Market" /></li>
                     <div className="mt-2.5 mr-2 mb-2.5 ml-9">
                         <hr />
                     </div>
-                    <li><SidebarRow Icon={ShoppingBagIcon} title="Market" /></li>
                     <li><SidebarRow Icon={SquaresPlusIcon} title="Mini apps" /></li>
                     <li><SidebarRow Icon={CurrencyDollarIcon} title="VK Pay" /></li>
                     <div className="mt-2.5 mr-2 mb-2.5 ml-9">
@@ -45,7 +45,7 @@ function Sidebar() {
                 <div className="mt-3.5 mr-2 mb-3.5">
                     <hr />
                 </div>
-                <div className="">
+                <div className="hover:*:underline">
                     <Link className="inline-block text-gray-400 text-xs" href="/">Recommendation technologies used</Link>
                 </div>
             </nav>

@@ -4,8 +4,8 @@ import Link from 'next/link'
 function Header() {
     return (
         <header className="w-full h-[48px] top-0 z-50 shadow-sm sticky bg-white">
-            <ul className='flex px-4 relative m-auto max-w-[1130px] items-center h-full'>
-                <Link className='flex items-center w-[165px]' href='/'>
+            <ul className='flex px-4 relative m-auto max-w-[1113px] items-center h-full'>
+                <Link className='flex items-center w-[175px]' href='/'>
                     <Image src="/vk-logo.png"
                         width={30}
                         height={30}
@@ -13,9 +13,9 @@ function Header() {
                     />
                 </Link>
                 {/*Search */}
-                <li className='flex items-center rounded-lg bg-gray-100 p-1.5 mr-4 hover:bg-gray-200'>
+                <li className='flex items-center rounded-lg bg-gray-100 hover:bg-gray-200 pl-3 py-1.5 mr-3.5'>
                     <MagnifyingGlassIcon height={16} width={16} color='grey' />
-                    <input type="text" className="hidden sm:flex ml-2 items-center bg-transparent outline-none text-sm placeholder:text-sm placeholder:text-gray-500" placeholder='Search' />
+                    <input type="text" className="hidden pl-1.5 pr-px sm:flex items-center bg-transparent outline-none text-[14px] placeholder:text-[13px] placeholder:text-gray-500" placeholder='Search' />
                 </li>
                 {/*Bell */}
                 <li className='flex items-center h-full'>
@@ -24,7 +24,7 @@ function Header() {
                     </div>
                 </li>
                 {/*Music */}
-                <li className='flex items-center h-full w-[502px]'>
+                <li className='flex items-center h-full w-[522px]'>
                     <div className='p-3 hover:bg-gray-100 cursor-pointer'>
                         <MusicalNoteIcon height={24} width={24} color='grey' />
                     </div>
